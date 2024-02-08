@@ -13,7 +13,7 @@ const Search = ({
   onSearchClick,
   isError,
   value,
-}: ISearchProps) => (
+}: ISearchProps): JSX.Element => (
   <SearchFieldWrapper>
     <TextField
       placeholder="Enter the book name..."
