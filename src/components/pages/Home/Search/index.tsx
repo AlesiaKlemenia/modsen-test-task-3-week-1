@@ -1,5 +1,4 @@
-import { TextField } from '@mui/material';
-import { SearchButton, SearchFieldWrapper } from './styled';
+import { SearchField, SearchButton, SearchFieldWrapper } from './styled';
 
 interface ISearchProps {
   onFieldChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -15,7 +14,7 @@ const Search = ({
   value,
 }: ISearchProps): JSX.Element => (
   <SearchFieldWrapper>
-    <TextField
+    <SearchField
       placeholder="Enter the book name..."
       fullWidth
       onChange={onFieldChange}
@@ -23,8 +22,12 @@ const Search = ({
       helperText={isError ? 'Can not be empty.' : ''}
     >
       {value}
-    </TextField>
-    <SearchButton variant="outlined" onClick={onSearchClick}>
+    </SearchField>
+    <SearchButton
+      variant="contained"
+      sx={{ backgroundColor: 'rgba(0, 0, 0)' }}
+      onClick={onSearchClick}
+    >
       Search
     </SearchButton>
   </SearchFieldWrapper>

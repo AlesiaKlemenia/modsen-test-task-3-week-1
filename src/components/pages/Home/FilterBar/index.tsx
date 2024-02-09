@@ -1,6 +1,7 @@
 import { SelectChangeEvent } from '@mui/material';
 import FilterSelect from './FilterSelect';
 import { categoryItems, sortingItems } from './consts';
+import { FilterBarWrapper } from './styled';
 
 interface IFilterBarProps {
   categoryValue: string;
@@ -15,7 +16,7 @@ const FilterBar = ({
   sortingValue,
   onSortingSelectChange,
 }: IFilterBarProps): JSX.Element => (
-  <>
+  <FilterBarWrapper>
     <FilterSelect
       label={'Category'}
       items={categoryItems}
@@ -28,7 +29,7 @@ const FilterBar = ({
       value={sortingValue}
       onSelectChange={onSortingSelectChange}
     ></FilterSelect>
-  </>
+  </FilterBarWrapper>
 );
 
 export default FilterBar;

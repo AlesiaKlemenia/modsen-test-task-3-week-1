@@ -2,7 +2,8 @@ import { Button, TextField } from '@mui/material';
 import styled from 'styled-components';
 
 export const SearchFieldWrapper = styled.div`
-  width: 500px;
+  width: 40vw;
+  min-width: 300px;
   height: 60px;
 
   display: flex;
@@ -15,5 +16,5 @@ export const SearchField = styled(TextField)`
 `
 
 export const SearchButton = styled(Button)`
-  height: 35px;
+  height: 40px;
 `

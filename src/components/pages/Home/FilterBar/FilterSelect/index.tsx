@@ -1,5 +1,5 @@
-import { InputLabel, MenuItem, SelectChangeEvent } from '@mui/material';
-import { StyledSelect } from './styled';
+import { MenuItem, SelectChangeEvent } from '@mui/material';
+import { FilterWrapper, SelectLabel, StyledSelect } from './styled';
 
 export interface ISelectItem {
   name: string;
@@ -19,8 +19,10 @@ const FilterSelect = ({
   value,
   onSelectChange,
 }: IFilterSelectProps): JSX.Element => (
-  <>
-    <InputLabel id={`${label}-select-labe}`}>{label}</InputLabel>
+  <FilterWrapper>
+    <SelectLabel id={`${label}-select-label}`} sx={{ color: 'rgba(0, 0, 0)' }}>
+      {label}
+    </SelectLabel>
     <StyledSelect
       labelId={`${label}-select-label`}
       id={`${label}-select`}
@@ -33,7 +35,7 @@ const FilterSelect = ({
         </MenuItem>
       ))}
     </StyledSelect>
-  </>
+  </FilterWrapper>
 );
 
 export default FilterSelect;

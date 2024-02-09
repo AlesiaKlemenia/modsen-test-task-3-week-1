@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import Layout from '../../Layout';
 import Search from './Search';
-import { SelectChangeEvent } from '@mui/material';
+import { SelectChangeEvent, Typography } from '@mui/material';
 import FilterBar from './FilterBar';
 
 const Home = (): JSX.Element => {
@@ -39,6 +39,9 @@ const Home = (): JSX.Element => {
 
   return (
     <Layout>
+      <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '2.4rem' }}>
+        Search for books
+      </Typography>
       <Search
         onFieldChange={onFieldChange}
         onSearchClick={onSearchClick}
