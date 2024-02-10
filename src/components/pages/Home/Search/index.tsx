@@ -2,6 +2,7 @@ import { SearchField, SearchButton, SearchFieldWrapper } from './styled';
 
 interface ISearchProps {
   onFieldChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown: React.KeyboardEventHandler<HTMLDivElement>;
   onSearchClick: () => void;
   isError: boolean;
   value: string;
@@ -9,6 +10,7 @@ interface ISearchProps {
 
 const Search = ({
   onFieldChange,
+  onKeyDown,
   onSearchClick,
   isError,
   value,
@@ -18,6 +20,7 @@ const Search = ({
       placeholder="Enter the book name..."
       fullWidth
       onChange={onFieldChange}
+      onKeyDown={onKeyDown}
       error={isError}
       helperText={isError ? 'Can not be empty.' : ''}
     >

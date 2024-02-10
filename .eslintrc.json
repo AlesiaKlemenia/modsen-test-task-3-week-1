@@ -16,7 +16,7 @@
     },
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "../tsconfig.json"
+    "project": "**/tsconfig.json"
   },
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "rules": {
@@ -93,7 +93,7 @@
     "no-unused-vars": "off",
     "operator-linebreak": "off",
     "implicit-arrow-linebreak": 0,
-    "no-console": ["error", { "allow": ["error"] }],
+    "no-console": ["error", { "allow": ["error", "warn"] }],
     "no-alert": "off",
     "no-underscore-dangle": "off",
     "consistent-return": "off",
