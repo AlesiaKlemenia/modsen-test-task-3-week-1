@@ -6,7 +6,7 @@ export interface IBookCardInfo {
   coverUrl: string;
 }
 
-export interface IBookDetailedInfo extends IBookCardInfo {
+export interface IBookDetailInfo extends IBookCardInfo {
   description: string;
 }
 

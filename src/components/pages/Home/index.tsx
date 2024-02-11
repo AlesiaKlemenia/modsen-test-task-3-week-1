@@ -17,6 +17,7 @@ const Home = (): JSX.Element => {
   const [sort, setSort] = useState<string>('relevance');
   const [catalogTitle, setCatalogTitle] = useState<string>('');
   const [books, setBooks] = useState<IBookCardInfo[]>([]);
+  // const [booksFullInfo, setBooksFullInfo] = useState<IBookDetailInfo[]>([]);
   const [searchStartIndex, setSearchStartIndex] = useState<number>(0);
 
   const onSearchClick = useCallback(async () => {
@@ -71,7 +72,9 @@ const Home = (): JSX.Element => {
       .join('+')}${(category === 'all' ? '' : `:subject:${category}`)}&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
 
+    console.error(response);
     const booksArray: IFullBookInfo[] = response.data?.items;
+    // booksArray.map((bookInfo => parseRecievedBooksForFullInfo(bookInfo)));
     const a = booksArray.map((bookInfo) => parseRecievedBooks(bookInfo));
     setBooks((prev) => [...prev, ...a]);
 
@@ -94,6 +97,25 @@ const Home = (): JSX.Element => {
     };
     return newCard;
   };
+
+  // const parseRecievedBooksForFullInfo = (fullBookInfo: IFullBookInfo) => {
+  //   const id = fullBookInfo?.id,
+  //     title = fullBookInfo?.volumeInfo?.title,
+  //     bookCategories = fullBookInfo?.volumeInfo?.categories,
+  //     authors = fullBookInfo?.volumeInfo?.authors,
+  //     coverUrl = fullBookInfo?.volumeInfo?.imageLinks?.thumbnail,
+  //     description = fullBookInfo?.volumeInfo?.description;
+
+  //   const newBookFullInfo: IBookDetailInfo = {
+  //     id: id,
+  //     title: title,
+  //     bookCategories: bookCategories,
+  //     authors: authors,
+  //     coverUrl: coverUrl,
+  //     description: description,
+  //   };
+  //   setBooksFullInfo((prev) => [...prev, newBookFullInfo]);
+  // };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter') {
