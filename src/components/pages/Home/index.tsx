@@ -54,22 +54,22 @@ const Home = (): JSX.Element => {
   }, []);
 
   useEffect(() => {
-    if(searchStartIndex ) {
+    if (searchStartIndex) {
       getBooks();
     }
-  },[searchStartIndex]);
+  }, [searchStartIndex]);
 
   useEffect(() => {
-    window.addEventListener("keydown", () => onKeyDown);
+    window.addEventListener('keydown', () => onKeyDown);
     return () => {
-      window.removeEventListener("keydown", () => onKeyDown);
-    }
-  })
+      window.removeEventListener('keydown', () => onKeyDown);
+    };
+  });
 
   const getBooks = async (): Promise<number> => {
-    const url = `${bookUrl}${value
-      .split(' ')
-      .join('+')}${(category === 'all' ? '' : `:subject:${category}`)}&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
+    const url = `${bookUrl}${value.split(' ').join('+')}${
+      category === 'all' ? '' : `:subject:${category}`
+    }&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
 
     console.error(response);
@@ -155,19 +155,23 @@ const Home = (): JSX.Element => {
           <>
             <BookCatalog>
               {books.map((book, index) => (
-                  <BookCard
-                    key={`${book.id}${index}`}
-                    id={book.id}
-                    title={book.title}
-                    bookCategories={book.bookCategories}
-                    authors={book.authors}
-                    coverUrl={book.coverUrl}
-                  ></BookCard>
-                ))}
+                <BookCard
+                  key={`${book.id}${index}`}
+                  id={book.id}
+                  title={book.title}
+                  bookCategories={book.bookCategories}
+                  authors={book.authors}
+                  coverUrl={book.coverUrl}
+                ></BookCard>
+              ))}
             </BookCatalog>
-            <Button variant='text' onClick={onLoadMoreClick}>Load more</Button>
+            <Button variant="text" onClick={onLoadMoreClick}>
+              Load more
+            </Button>
           </>
-        ) : (<></>)}
+        ) : (
+          <></>
+        )}
       </CatalogField>
     </Layout>
   );
