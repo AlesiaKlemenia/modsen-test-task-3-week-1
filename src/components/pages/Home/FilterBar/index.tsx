@@ -18,17 +18,17 @@ const FilterBar = ({
 }: IFilterBarProps): JSX.Element => (
   <FilterBarWrapper>
     <FilterSelect
-      label={'Category'}
+      label="Category"
       items={categoryItems}
       value={categoryValue}
       onSelectChange={onCategorySelectChange}
-    ></FilterSelect>
+    />
     <FilterSelect
-      label={'Sorting'}
+      label="Sorting"
       items={sortingItems}
       value={sortingValue}
       onSelectChange={onSortingSelectChange}
-    ></FilterSelect>
+    />
   </FilterBarWrapper>
 );
 

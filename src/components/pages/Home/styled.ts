@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SearchField = styled.div`
   width: 100%;
@@ -10,7 +10,7 @@ export const SearchField = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-`
+`;
 
 export const CatalogField = styled.div`
   width: 100%;
@@ -21,4 +21,4 @@ export const CatalogField = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-`
+`;

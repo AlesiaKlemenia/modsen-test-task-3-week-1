@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FilterBarWrapper = styled.div`
   display: flex;
@@ -6,4 +6,4 @@ export const FilterBarWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-`
+`;

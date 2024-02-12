@@ -4,6 +4,8 @@ interface ILayoutProps {
   children: JSX.Element[] | JSX.Element;
 }
 
-const Layout = ({ children }: ILayoutProps) => <Wrapper>{children}</Wrapper>;
+const Layout = ({ children }: ILayoutProps): JSX.Element => (
+  <Wrapper>{children}</Wrapper>
+);
 
 export default Layout;
