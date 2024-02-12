@@ -26,7 +26,7 @@ export interface IFullBookInfo {
     imageLinks: {
       smallThumbnail: string;
       thumbnail: string;
-    }
+    };
     industryIdentifiers: [];
     infoLink: string;
     language: string;
@@ -38,5 +38,5 @@ export interface IFullBookInfo {
     publishedDate: string;
     readingModes: object;
     title: string;
-  }
+  };
 }

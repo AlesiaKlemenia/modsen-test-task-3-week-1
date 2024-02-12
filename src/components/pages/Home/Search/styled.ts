@@ -13,8 +13,8 @@ export const SearchFieldWrapper = styled.div`
 
 export const SearchField = styled(TextField)`
   height: 100%;
-`
+`;
 
 export const SearchButton = styled(Button)`
   height: 40px;
-`
+`;
