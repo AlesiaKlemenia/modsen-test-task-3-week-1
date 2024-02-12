@@ -1,16 +1,21 @@
-# Упс.. Кажется, этот проект выглядит пустовато
+# Get started
 
-Но это не повод унывать!
+* Clone repo
+* `npm i`
+* Enable vpn (necessary for Google Books API)
+* `npm start`
+* Enjoy!
 
-## Что уже есть в репозитории?
+## Implemented functionality
 
-* Осуществляется поиск по заданному вводу. Результат можно увидеть в консоли. Важно: пока не реализован поиск по Enter, но это дело быстро поправимое :)
-* Кнопки сортировки и фильтрации. Существуют, но пока что ни на что не влияют.
-* Адаптив.
+* Search form with working filtering and search using the `Enter` key
+* Book cards (which don't seem to float at different sizes and different data received :) )
+* `Found X result` string
+* Pagination
+* Page with additional information about the book
+* Loader while we're getting books list
+* Responsive (I guess)
 
-## Что ещё реализовано или почти реализовано, но пока не запушено по тем или иным причинам?
+## Not implemented functionality
 
-* Каталог книг в формате карточек с ограничением в 30 карточек на странице.
-* Отображение количества найденных результатов поиска.
-
-**Пятница ещё не закончилась, а значит, есть время постараться успеть всё!**
+* Not all errors are processed (e.g. a situation where an undefined request will lead to a project crash)
