@@ -3,3 +3,4 @@ node_modules
 assets
 
 **/*.d.ts
+.css

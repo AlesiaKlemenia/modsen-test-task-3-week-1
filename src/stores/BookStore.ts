@@ -1,4 +1,4 @@
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable, observable } from 'mobx';
 
 interface IBookStore {
   readonly id: string;
@@ -9,7 +9,7 @@ interface IBookStore {
 }
 
 class BookStore implements IBookStore {
-  private _id: string = '';
+  private _id = '';
   private _title = '';
   private _bookCategories: string[] = [];
   private _authors: string[] = [];
@@ -24,7 +24,7 @@ class BookStore implements IBookStore {
     this._id = value;
   }
 
-  public get id() {
+  public get id(): string {
     return this._id;
   }
 
@@ -33,24 +33,24 @@ class BookStore implements IBookStore {
     this._title = value;
   }
 
-  public get title() {
+  public get title(): string {
     return this._title;
   }
   public set bookCategories(value: string[]) {
-    if (value.length) return;
-    this._bookCategories = value;
+    if (!value.length) return;
+    this._bookCategories = observable.array(value);
   }
 
-  public get bookCategories() {
+  public get bookCategories(): string[] {
     return this._bookCategories;
   }
 
   public set authors(value: string[]) {
-    if (value.length) return;
-    this._authors = value;
+    if (!value.length) return;
+    this._authors = observable.array(value);
   }
 
-  public get authors() {
+  public get authors(): string[] {
     return this._authors;
   }
 
@@ -59,11 +59,11 @@ class BookStore implements IBookStore {
     this._coverUrl = value;
   }
 
-  public get coverUrl() {
+  public get coverUrl(): string {
     return this._coverUrl;
   }
 
-  public clearStore = () => {
+  public clearStore = (): void => {
     this._id = '';
     this._title = '';
     this._bookCategories = [];
