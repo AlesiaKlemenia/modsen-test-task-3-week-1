@@ -6,3 +6,6 @@ build
 *.eslintrc.json
 .eslintrc.js
 .babel.config.js
+
+*.css
+*.svg

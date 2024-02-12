@@ -1,10 +1,16 @@
 import { useCallback, useEffect, useState } from 'react';
+import {
+  Box,
+  Button,
+  LinearProgress,
+  SelectChangeEvent,
+  Typography,
+} from '@mui/material';
+import axios from 'axios';
 import Layout from '../../Layout';
 import Search from './Search';
-import { Button, SelectChangeEvent, Typography } from '@mui/material';
 import FilterBar from './FilterBar';
-import { bookUrl } from '../../../consts/api';
-import axios from 'axios';
+import { searchBooksUrl } from '../../../consts/api';
 import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
 import { CatalogField, SearchField } from './styled';
 import BookCard from './BookCard';
@@ -18,16 +24,7 @@ const Home = (): JSX.Element => {
   const [catalogTitle, setCatalogTitle] = useState<string>('');
   const [books, setBooks] = useState<IBookCardInfo[]>([]);
   const [searchStartIndex, setSearchStartIndex] = useState<number>(0);
-
-  const onSearchClick = useCallback(async () => {
-    if (value) {
-      setSearchStartIndex(0);
-      const totalItems = await getBooks();
-      setCatalogTitle(`Found ${totalItems} results`);
-    } else {
-      setIsError(true);
-    }
-  }, [value]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const onFieldChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,54 +49,62 @@ const Home = (): JSX.Element => {
     setSearchStartIndex((searchIndex) => searchIndex + 30);
   }, []);
 
-  useEffect(() => {
-    if(searchStartIndex ) {
-      getBooks();
-    }
-  },[searchStartIndex]);
+  const parseRecievedBooks = (fullBookInfo: IFullBookInfo): IBookCardInfo => {
+    const newCard: IBookCardInfo = {
+      id: fullBookInfo?.id,
+      title: fullBookInfo?.volumeInfo?.title,
+      bookCategories: fullBookInfo?.volumeInfo?.categories,
+      authors: fullBookInfo?.volumeInfo?.authors,
+      coverUrl: fullBookInfo?.volumeInfo?.imageLinks?.thumbnail,
+    };
 
-  useEffect(() => {
-    window.addEventListener("keydown", () => onKeyDown);
-    return () => {
-      window.removeEventListener("keydown", () => onKeyDown);
-    }
-  })
+    return newCard;
+  };
 
-  const getBooks = async (): Promise<number> => {
-    const url = `${bookUrl}${value
-      .split(' ')
-      .join('+')}${(category === 'all' ? '' : `:subject:${category}`)}&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
+  const getBooks = useCallback(async (): Promise<number> => {
+    const url = `${searchBooksUrl}${value.split(' ').join('+')}${
+      category === 'all' ? '' : `:subject:${category}`
+    }&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
 
     const booksArray: IFullBookInfo[] = response.data?.items;
     const a = booksArray.map((bookInfo) => parseRecievedBooks(bookInfo));
     setBooks((prev) => [...prev, ...a]);
+    setIsLoading(false);
+    return response.data?.totalItems || 0;
+  }, [category, sort, value, searchStartIndex]);
 
-    return response.data?.totalItems | 0;
-  };
+  const onSearchClick = useCallback(async () => {
+    if (value) {
+      setIsLoading(true);
+      setSearchStartIndex(0);
+      setTimeout(async () => {
+        const totalItems = await getBooks();
+        setCatalogTitle(`Found ${totalItems} results`);
+      }, 0);
+    } else {
+      setIsError(true);
+    }
+  }, [value, getBooks]);
 
-  const parseRecievedBooks = (fullBookInfo: IFullBookInfo): IBookCardInfo => {
-    const id = fullBookInfo?.id,
-      title = fullBookInfo?.volumeInfo?.title,
-      bookCategories = fullBookInfo?.volumeInfo?.categories,
-      authors = fullBookInfo?.volumeInfo?.authors,
-      coverUrl = fullBookInfo?.volumeInfo?.imageLinks?.thumbnail;
+  useEffect(() => {
+    if (searchStartIndex) {
+      getBooks();
+    }
+  }, [searchStartIndex, getBooks]);
 
-    const newCard: IBookCardInfo = {
-      id: id,
-      title: title,
-      bookCategories: bookCategories,
-      authors: authors,
-      coverUrl: coverUrl,
-    };
-    return newCard;
-  };
-
-  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+  const onKeyDown = (e: React.KeyboardEvent<HTMLDivElement>): void => {
     if (e.key === 'Enter') {
       onSearchClick();
     }
   };
+
+  useEffect(() => {
+    window.addEventListener('keydown', () => onKeyDown);
+    return () => {
+      window.removeEventListener('keydown', () => onKeyDown);
+    };
+  });
 
   return (
     <Layout>
@@ -109,11 +114,7 @@ const Home = (): JSX.Element => {
         </Typography>
         <Search
           onFieldChange={onFieldChange}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              onSearchClick();
-            }
-          }}
+          onKeyDown={onKeyDown}
           onSearchClick={onSearchClick}
           isError={isError}
           value={value}
@@ -125,14 +126,19 @@ const Home = (): JSX.Element => {
           onSortingSelectChange={onSelectSortChange}
         />
       </SearchField>
-      <CatalogField>
-        <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '1.7rem' }}>
-          {catalogTitle}
-        </Typography>
-        {books.length ? (
-          <>
-            <BookCatalog>
-              {books.map((book, index) => (
+      {isLoading ? (
+        <Box sx={{ width: '100%' }}>
+          <LinearProgress />
+        </Box>
+      ) : (
+        <CatalogField>
+          <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '1.7rem' }}>
+            {catalogTitle}
+          </Typography>
+          {books.length ? (
+            <>
+              <BookCatalog>
+                {books.map((book, index) => (
                   <BookCard
                     key={`${book.id}${index}`}
                     id={book.id}
@@ -140,13 +146,16 @@ const Home = (): JSX.Element => {
                     bookCategories={book.bookCategories}
                     authors={book.authors}
                     coverUrl={book.coverUrl}
-                  ></BookCard>
+                  />
                 ))}
-            </BookCatalog>
-            <Button variant='text' onClick={onLoadMoreClick}>Load more</Button>
-          </>
-        ) : (<></>)}
-      </CatalogField>
+              </BookCatalog>
+              <Button variant="text" onClick={onLoadMoreClick}>
+                Load more
+              </Button>
+            </>
+          ) : null}
+        </CatalogField>
+      )}
     </Layout>
   );
 };
