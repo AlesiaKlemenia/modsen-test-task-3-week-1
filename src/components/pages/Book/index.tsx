@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import axios from 'axios';
-import { observer } from 'mobx-react-lite';
+import { useParams } from 'react-router';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import {
   Author,
@@ -16,22 +16,36 @@ import {
   StyledNav,
   Title,
 } from './styled';
-import bookStore from '../../../stores/BookStore';
 import noCoverImage from '../../../assets/img/no-image.png';
 import { getBookUrl } from '../../../consts/api';
 import Layout from '../../Layout';
 import { IFullBookInfo } from '../../../consts/bookInfo';
 
-const Home = observer(() => {
+const Home = (): JSX.Element => {
+  const { id } = useParams();
+  const [title, setTitle] = useState<string>('');
+  const [bookCategories, setBookCategories] = useState<string>('');
+  const [authors, setAuthors] = useState<string>('');
+  const [coverUrl, setCoverUrl] = useState<string>('');
   const [description, setDescription] = useState<string>('');
-  const { id, title, bookCategories, authors, coverUrl } = bookStore;
 
   useEffect(() => {
     if (!id) return;
     (async () => {
       const response = await axios.get(`${getBookUrl}${id}`);
       const result: IFullBookInfo = response.data;
-      setDescription(result.volumeInfo.description);
+
+      setTitle(result.volumeInfo.title ?? '');
+      setBookCategories(result.volumeInfo.categories?.join(' / ') ?? '');
+      setAuthors(result.volumeInfo.authors?.join(', ') ?? '');
+      setCoverUrl(
+        result.volumeInfo.imageLinks?.medium ??
+          result.volumeInfo.imageLinks?.small ??
+          result.volumeInfo.imageLinks?.thumbnail ??
+          result.volumeInfo.imageLinks?.smallThumbnail ??
+          '',
+      );
+      setDescription(result.volumeInfo.description ?? '');
     })();
   }, [id]);
 
@@ -66,9 +80,7 @@ const Home = observer(() => {
         </ImageWrapper>
         <BookDetailInfoWrapper>
           {bookCategories ? (
-            <Category sx={{ marginBottom: '1rem' }}>
-              {bookCategories.join(', ')}
-            </Category>
+            <Category sx={{ marginBottom: '1rem' }}>{bookCategories}</Category>
           ) : (
             <EmptyElement />
           )}
@@ -80,7 +92,7 @@ const Home = observer(() => {
             <EmptyElement />
           )}
           {authors ? (
-            <Author sx={{ marginBottom: '1rem' }}>{authors.join(', ')}</Author>
+            <Author sx={{ marginBottom: '1rem' }}>{authors}</Author>
           ) : (
             <EmptyElement />
           )}
@@ -98,6 +110,6 @@ const Home = observer(() => {
       </BookInfoWrapper>
     </Layout>
   );
-});
+};
 
 export default Home;

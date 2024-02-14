@@ -1,4 +1,3 @@
-import { useCallback, useEffect } from 'react';
 import { Box } from '@mui/material';
 import { IBookCardInfo } from '../../../../consts/bookInfo';
 import {
@@ -12,9 +11,6 @@ import {
   Title,
 } from './styled';
 import noCoverImage from '../../../../assets/img/no-image.png';
-import bookStore from '../../../../stores/BookStore';
-
-// import Book from '../../Book';
 
 const BookCard = ({
   id,
@@ -23,28 +19,8 @@ const BookCard = ({
   authors,
   coverUrl,
 }: IBookCardInfo): JSX.Element => {
-  const onLinkClick = useCallback(() => {
-    if (title) {
-      bookStore.id = id;
-      bookStore.title = title;
-      bookStore.bookCategories = bookCategories;
-      bookStore.authors = authors;
-      bookStore.coverUrl = coverUrl;
-    }
-  }, [id, title, bookCategories, authors, coverUrl]);
-
-  useEffect(() => {
-    const handleContextmenu = (e: any): void => {
-      e.preventDefault();
-    };
-    document.addEventListener('contextmenu', handleContextmenu);
-    return function cleanup() {
-      document.removeEventListener('contextmenu', handleContextmenu);
-    };
-  }, []);
-
   return (
-    <StyledLink onClick={onLinkClick} to={`/books/${id}`} isdisabled={!title}>
+    <StyledLink to={`/books/${id}`} isdisabled={!title}>
       <StyledCard
         sx={{
           border: 'black rgba(0, 0, 0, 0.05) solid',
