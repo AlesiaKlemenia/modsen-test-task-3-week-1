@@ -24,6 +24,8 @@ export interface IFullBookInfo {
     contentVersion: string;
     description: string;
     imageLinks: {
+      medium: string;
+      small: string;
       smallThumbnail: string;
       thumbnail: string;
     };

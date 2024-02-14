@@ -76,6 +76,7 @@ const Home = (): JSX.Element => {
 
   const onSearchClick = useCallback(async () => {
     if (value) {
+      setBooks(() => []);
       setIsLoading(true);
       setSearchStartIndex(0);
       setTimeout(async () => {
