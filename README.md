@@ -1,5 +1,8 @@
 # Get started
 
+Project link: https://lustrous-torte-8ffa19.netlify.app/
+
+How to build project on local:
 * Clone repo
 * `npm i`
 * Enable vpn (necessary for Google Books API)
@@ -15,7 +18,3 @@
 * Page with additional information about the book
 * Loader while we're getting books list
 * Responsive (I guess)
-
-## Not implemented functionality
-
-* Not all errors are processed (e.g. a situation where an undefined request will lead to a project crash)
