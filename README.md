@@ -1,6 +1,6 @@
 # Get started
 
-Project link: https://lustrous-torte-8ffa19.netlify.app/
+Project link: https://modsen-test-task-3.netlify.app/
 
 How to build project on local:
 * Clone repo
