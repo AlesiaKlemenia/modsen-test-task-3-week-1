@@ -15,13 +15,14 @@ import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
 import { CatalogField, SearchField } from './styled';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';
+import EmptySearchResult from './EmptySearchResult';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');
   const [isError, setIsError] = useState<boolean>(false);
   const [category, setCategory] = useState<string>('all');
   const [sort, setSort] = useState<string>('relevance');
-  const [catalogTitle, setCatalogTitle] = useState<string>('');
+  const [booksCount, setBooksCount] = useState<number>(-1);
   const [books, setBooks] = useState<IBookCardInfo[]>([]);
   const [searchStartIndex, setSearchStartIndex] = useState<number>(0);
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -50,28 +51,32 @@ const Home = (): JSX.Element => {
   }, []);
 
   const parseRecievedBooks = (fullBookInfo: IFullBookInfo): IBookCardInfo => {
-    const newCard: IBookCardInfo = {
+    return {
       id: fullBookInfo?.id,
       title: fullBookInfo?.volumeInfo?.title,
       bookCategories: fullBookInfo?.volumeInfo?.categories,
       authors: fullBookInfo?.volumeInfo?.authors,
       coverUrl: fullBookInfo?.volumeInfo?.imageLinks?.thumbnail,
     };
-
-    return newCard;
   };
 
-  const getBooks = useCallback(async (): Promise<number> => {
+  const getBooks = useCallback(async (): Promise<void> => {
     const url = `${searchBooksUrl}${value.split(' ').join('+')}${
       category === 'all' ? '' : `:subject:${category}`
     }&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
+    console.warn(response);
+    if (!response.data.totalItems) {
+      setBooksCount(() => 0);
+      setIsLoading(false);
+      return;
+    }
 
     const booksArray: IFullBookInfo[] = response.data?.items;
     const a = booksArray.map((bookInfo) => parseRecievedBooks(bookInfo));
     setBooks((prev) => [...prev, ...a]);
     setIsLoading(false);
-    return response.data?.totalItems || 0;
+    setBooksCount(response.data.totalItems);
   }, [category, sort, value, searchStartIndex]);
 
   const onSearchClick = useCallback(async () => {
@@ -80,8 +85,7 @@ const Home = (): JSX.Element => {
       setIsLoading(true);
       setSearchStartIndex(0);
       setTimeout(async () => {
-        const totalItems = await getBooks();
-        setCatalogTitle(`Found ${totalItems} results`);
+        await getBooks();
       }, 0);
     } else {
       setIsError(true);
@@ -133,11 +137,11 @@ const Home = (): JSX.Element => {
         </Box>
       ) : (
         <CatalogField>
-          <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '1.7rem' }}>
-            {catalogTitle}
-          </Typography>
           {books.length ? (
             <>
+              <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '1.7rem' }}>
+                Found {booksCount} results
+              </Typography>
               <BookCatalog>
                 {books.map((book, index) => (
                   <BookCard
@@ -154,7 +158,9 @@ const Home = (): JSX.Element => {
                 Load more
               </Button>
             </>
-          ) : null}
+          ) : booksCount ? null : (
+            <EmptySearchResult />
+          )}
         </CatalogField>
       )}
     </Layout>
