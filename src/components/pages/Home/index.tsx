@@ -8,14 +8,13 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 import Layout from '../../Layout';
-import Search from './Search';
-import FilterBar from './FilterBar';
 import { searchBooksUrl } from '../../../consts/api';
 import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
-import { CatalogField, SearchField } from './styled';
+import { CatalogField } from './styled';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';
 import EmptySearchResult from './EmptySearchResult';
+import SearchBar from './SearchBar';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');
@@ -113,24 +112,17 @@ const Home = (): JSX.Element => {
 
   return (
     <Layout>
-      <SearchField>
-        <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '2.4rem' }}>
-          Search for books
-        </Typography>
-        <Search
-          onFieldChange={onFieldChange}
-          onKeyDown={onKeyDown}
-          onSearchClick={onSearchClick}
-          isError={isError}
-          value={value}
-        />
-        <FilterBar
-          categoryValue={category}
-          onCategorySelectChange={onSelectCategoryChange}
-          sortingValue={sort}
-          onSortingSelectChange={onSelectSortChange}
-        />
-      </SearchField>
+      <SearchBar
+        onFieldChange={onFieldChange}
+        onKeyDown={onKeyDown}
+        onSearchClick={onSearchClick}
+        isError={isError}
+        value={value}
+        category={category}
+        onCategorySelectChange={onSelectCategoryChange}
+        sort={sort}
+        onSortingSelectChange={onSelectSortChange}
+      />
       {isLoading ? (
         <Box sx={{ width: '100%' }}>
           <LinearProgress />

@@ -2,12 +2,11 @@ import { Button, TextField } from '@mui/material';
 import styled from 'styled-components';
 
 export const SearchFieldWrapper = styled.div`
-  width: 40vw;
+  width: 35vw;
   min-width: 300px;
-  height: 60px;
+  height: 40px;
 
   display: flex;
-  gap: 5px;
   align-items: center;
 `;
 

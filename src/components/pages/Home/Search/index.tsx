@@ -1,6 +1,6 @@
 import { SearchField, SearchButton, SearchFieldWrapper } from './styled';
 
-interface ISearchProps {
+export interface ISearchProps {
   onFieldChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onKeyDown: React.KeyboardEventHandler<HTMLDivElement>;
   onSearchClick: () => void;
@@ -19,6 +19,7 @@ const Search = ({
     <SearchField
       placeholder="Enter the book name..."
       fullWidth
+      size="small"
       onChange={onFieldChange}
       onKeyDown={onKeyDown}
       error={isError}
