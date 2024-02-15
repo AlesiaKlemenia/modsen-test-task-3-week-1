@@ -5,5 +5,5 @@ export const FilterBarWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 `;

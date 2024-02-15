@@ -3,30 +3,30 @@ import FilterSelect from './FilterSelect';
 import { categoryItems, sortingItems } from './consts';
 import { FilterBarWrapper } from './styled';
 
-interface IFilterBarProps {
-  categoryValue: string;
+export interface IFilterBarProps {
+  category: string;
   onCategorySelectChange: (e: SelectChangeEvent<unknown>) => void;
-  sortingValue: string;
+  sort: string;
   onSortingSelectChange: (e: SelectChangeEvent<unknown>) => void;
 }
 
 const FilterBar = ({
-  categoryValue,
+  category,
   onCategorySelectChange,
-  sortingValue,
+  sort,
   onSortingSelectChange,
 }: IFilterBarProps): JSX.Element => (
   <FilterBarWrapper>
     <FilterSelect
       label="Category"
       items={categoryItems}
-      value={categoryValue}
+      value={category}
       onSelectChange={onCategorySelectChange}
     />
     <FilterSelect
       label="Sorting"
       items={sortingItems}
-      value={sortingValue}
+      value={sort}
       onSelectChange={onSortingSelectChange}
     />
   </FilterBarWrapper>
