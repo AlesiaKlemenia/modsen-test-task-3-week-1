@@ -9,7 +9,8 @@ import axios from 'axios';
 import { useCallback, useEffect, useState } from 'react';
 
 import { searchBooksUrl } from '../../../consts/api';
-import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
+import { IBookCardInfo } from '../../../interfaces/IBookCardInfo';
+import { IFullBookInfo } from '../../../interfaces/IFullBookInfo';
 import Layout from '../../Layout';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';

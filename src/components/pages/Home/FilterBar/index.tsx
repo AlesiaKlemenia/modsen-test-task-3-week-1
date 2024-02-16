@@ -1,15 +1,7 @@
-import { SelectChangeEvent } from '@mui/material';
-
+import { IFilterBarProps } from '../../../../interfaces/IFilterBarProps';
 import { categoryItems, sortingItems } from './consts';
 import FilterSelect from './FilterSelect';
 import { FilterBarWrapper } from './styled';
-
-export interface IFilterBarProps {
-  category: string;
-  onCategorySelectChange: (e: SelectChangeEvent<unknown>) => void;
-  sort: string;
-  onSortingSelectChange: (e: SelectChangeEvent<unknown>) => void;
-}
 
 const FilterBar = ({
   category,

@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
 import noCoverImage from '../../../../assets/img/no-image.png';
-import { IBookCardInfo } from '../../../../consts/bookInfo';
+import { IBookCardInfo } from '../../../../interfaces/IBookCardInfo';
 import {
   Author,
   BookInfo,

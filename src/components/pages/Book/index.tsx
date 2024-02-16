@@ -6,7 +6,7 @@ import { useParams } from 'react-router';
 
 import noCoverImage from '../../../assets/img/no-image.png';
 import { getBookUrl } from '../../../consts/api';
-import { IFullBookInfo } from '../../../consts/bookInfo';
+import { IFullBookInfo } from '../../../interfaces/IFullBookInfo';
 import Layout from '../../Layout';
 import {
   Author,

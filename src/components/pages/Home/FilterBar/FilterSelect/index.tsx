@@ -1,18 +1,7 @@
-import { InputLabel, MenuItem, SelectChangeEvent } from '@mui/material';
+import { InputLabel, MenuItem } from '@mui/material';
 
+import { IFilterSelectProps } from './interfaces';
 import { FilterWrapper, StyledSelect } from './styled';
-
-export interface ISelectItem {
-  name: string;
-  value: string;
-}
-
-interface IFilterSelectProps {
-  label: string;
-  items: ISelectItem[];
-  value: string;
-  onSelectChange: (e: SelectChangeEvent<unknown>) => void;
-}
 
 const FilterSelect = ({
   label,
