@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 export const SearchField = styled.div`
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 30px 0;
   background-color: rgba(0, 0, 0, 0.05);
 
   display: flex;
