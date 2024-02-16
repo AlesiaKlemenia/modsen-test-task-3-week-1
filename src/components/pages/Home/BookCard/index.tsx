@@ -1,4 +1,6 @@
 import { Box } from '@mui/material';
+
+import noCoverImage from '../../../../assets/img/no-image.png';
 import { IBookCardInfo } from '../../../../consts/bookInfo';
 import {
   Author,
@@ -6,11 +8,10 @@ import {
   Category,
   EmptyElement,
   ImageWrapper,
-  StyledLink,
   StyledCard,
+  StyledLink,
   Title,
 } from './styled';
-import noCoverImage from '../../../../assets/img/no-image.png';
 
 const BookCard = ({
   id,

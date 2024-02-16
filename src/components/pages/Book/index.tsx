@@ -1,8 +1,13 @@
-import { useEffect, useState } from 'react';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Box, Typography } from '@mui/material';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+
+import noCoverImage from '../../../assets/img/no-image.png';
+import { getBookUrl } from '../../../consts/api';
+import { IFullBookInfo } from '../../../consts/bookInfo';
+import Layout from '../../Layout';
 import {
   Author,
   BookDetailInfoWrapper,
@@ -16,10 +21,6 @@ import {
   StyledNav,
   Title,
 } from './styled';
-import noCoverImage from '../../../assets/img/no-image.png';
-import { getBookUrl } from '../../../consts/api';
-import Layout from '../../Layout';
-import { IFullBookInfo } from '../../../consts/bookInfo';
 
 const Home = (): JSX.Element => {
   const { id } = useParams();

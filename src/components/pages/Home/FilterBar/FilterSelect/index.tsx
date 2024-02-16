@@ -1,4 +1,5 @@
 import { InputLabel, MenuItem, SelectChangeEvent } from '@mui/material';
+
 import { FilterWrapper, StyledSelect } from './styled';
 
 export interface ISelectItem {

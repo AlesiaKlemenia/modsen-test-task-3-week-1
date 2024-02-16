@@ -1,4 +1,4 @@
-import { SearchField, SearchButton, SearchFieldWrapper } from './styled';
+import { SearchButton, SearchField, SearchFieldWrapper } from './styled';
 
 export interface ISearchProps {
   onFieldChange: (e: React.ChangeEvent<HTMLInputElement>) => void;

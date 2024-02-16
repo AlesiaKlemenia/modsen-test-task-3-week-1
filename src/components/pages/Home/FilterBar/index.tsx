@@ -1,6 +1,7 @@
 import { SelectChangeEvent } from '@mui/material';
-import FilterSelect from './FilterSelect';
+
 import { categoryItems, sortingItems } from './consts';
+import FilterSelect from './FilterSelect';
 import { FilterBarWrapper } from './styled';
 
 export interface IFilterBarProps {

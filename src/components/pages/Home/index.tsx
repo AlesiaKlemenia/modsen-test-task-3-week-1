@@ -1,4 +1,3 @@
-import { useCallback, useEffect, useState } from 'react';
 import {
   Box,
   Button,
@@ -7,14 +6,16 @@ import {
   Typography,
 } from '@mui/material';
 import axios from 'axios';
-import Layout from '../../Layout';
+import { useCallback, useEffect, useState } from 'react';
+
 import { searchBooksUrl } from '../../../consts/api';
 import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
-import { CatalogField } from './styled';
+import Layout from '../../Layout';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';
 import EmptySearchResult from './EmptySearchResult';
 import SearchBar from './SearchBar';
+import { CatalogField } from './styled';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');

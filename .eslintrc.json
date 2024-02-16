@@ -24,7 +24,8 @@
     "plugins":[
        "react",
        "@typescript-eslint",
-       "react-hooks"
+       "react-hooks",
+       "simple-import-sort"
     ],
     "rules": {
       "no-nested-ternary": "off",
@@ -79,7 +80,9 @@
       "react/react-in-jsx-scope": "off",
       "no-console": ["error", { "allow": ["error", "warn"] }],
       "no-underscore-dangle": "off",
-      "react/no-array-index-key": "off"
+      "react/no-array-index-key": "off",
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error"
     },
     "settings":{
       "import/resolver": {
