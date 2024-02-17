@@ -12,7 +12,7 @@
        "prettier/prettier",
        "plugin:prettier/recommended"
     ],
-    "parser":"@typescript-eslint/parser",
+    "parser": "@typescript-eslint/parser",
     "parserOptions":{
        "ecmaFeatures":{
           "jsx":true
@@ -21,7 +21,12 @@
        "sourceType":"module",
        "project": "./tsconfig.json"
     },
-    "plugins":[
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"]
+    }
+  ],
+  "plugins":[
        "react",
        "@typescript-eslint",
        "react-hooks",
@@ -82,12 +87,19 @@
       "no-underscore-dangle": "off",
       "react/no-array-index-key": "off",
       "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error"
+      "simple-import-sort/exports": "error",
     },
     "settings":{
       "import/resolver": {
         "node": {
           "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        },
+        "alias": {
+          "map": [
+            ["@", "./src"],
+            ["@components", "./src/components"]
+          ],
+          "extensions": [".ts", ".js", ".jsx", ".json"]
         }
       }
     }
