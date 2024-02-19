@@ -1,3 +1,4 @@
+import { searchBooksUrl } from '@components/pages/Home/constants';
 import {
   Box,
   Button,
@@ -8,9 +9,9 @@ import {
 import axios from 'axios';
 import { useCallback, useEffect, useState } from 'react';
 
-import { searchBooksUrl } from '../../../consts/api';
-import { IBookCardInfo } from '../../../interfaces/IBookCardInfo';
-import { IFullBookInfo } from '../../../interfaces/IFullBookInfo';
+import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
+import { IFullBookInfo } from '@/interfaces/IFullBookInfo';
+
 import Layout from '../../Layout';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';
@@ -66,7 +67,6 @@ const Home = (): JSX.Element => {
       category === 'all' ? '' : `:subject:${category}`
     }&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
-    console.warn(response);
     if (!response.data.totalItems) {
       setBooksCount(() => 0);
       setIsLoading(false);

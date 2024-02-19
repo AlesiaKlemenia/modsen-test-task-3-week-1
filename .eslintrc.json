@@ -87,7 +87,7 @@
       "no-underscore-dangle": "off",
       "react/no-array-index-key": "off",
       "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
+      "simple-import-sort/exports": "error"
     },
     "settings":{
       "import/resolver": {
@@ -99,7 +99,7 @@
             ["@", "./src"],
             ["@components", "./src/components"]
           ],
-          "extensions": [".ts", ".js", ".jsx", ".json"]
+          "extensions": [".ts", "tsx", ".js", ".jsx", ".json"]
         }
       }
     }

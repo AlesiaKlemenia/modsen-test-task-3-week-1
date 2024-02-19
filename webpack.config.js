@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
   },
   mode: 'development',
   resolve: {
@@ -33,7 +34,10 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            },
           },
         ],
       },
@@ -50,6 +54,9 @@ module.exports = {
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
   // Only for dev
   performance: {
     hints: false,

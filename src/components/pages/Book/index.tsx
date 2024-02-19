@@ -4,11 +4,11 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
-import Layout from '@/components/Layout';
-import { getBookUrl } from '@/consts/api';
 import { IFullBookInfo } from '@/interfaces/IFullBookInfo';
+import Layout from '@/components/Layout';
 
 import noCoverImage from '../../../assets/img/no-image.png';
+import { getBookUrl } from './constants';
 import {
   Author,
   BookDetailInfoWrapper,

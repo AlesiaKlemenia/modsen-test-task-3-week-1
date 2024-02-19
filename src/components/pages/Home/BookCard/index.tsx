@@ -1,7 +1,9 @@
 import { Box } from '@mui/material';
 
-import noCoverImage from '../../../../assets/img/no-image.png';
-import { IBookCardInfo } from '../../../../interfaces/IBookCardInfo';
+import noCoverImage from '@/assets/img/no-image.png';
+import paths from '@/constants/paths';
+import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
+
 import {
   Author,
   BookInfo,
@@ -21,7 +23,7 @@ const BookCard = ({
   coverUrl,
 }: IBookCardInfo): JSX.Element => {
   return (
-    <StyledLink to={`/books/${id}`} isdisabled={!title}>
+    <StyledLink to={`${paths.book.url}${id}`} isdisabled={!title}>
       <StyledCard
         sx={{
           border: 'black rgba(0, 0, 0, 0.05) solid',
