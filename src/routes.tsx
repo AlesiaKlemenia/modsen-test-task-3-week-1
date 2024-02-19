@@ -1,3 +1,4 @@
+import ErrorBoundary from '@components/ErrorBoundary';
 import { createBrowserRouter } from 'react-router-dom';
 
 import paths from '@/constants/paths';
@@ -10,14 +11,17 @@ const router = createBrowserRouter([
   {
     path: paths.home,
     element: <Home />,
+    errorElement: <ErrorBoundary />,
   },
   {
     path: paths.book.route,
     element: <Book />,
+    errorElement: <ErrorBoundary />,
   },
   {
     path: paths.notFound,
     element: <NotFound />,
+    errorElement: <ErrorBoundary />,
   },
 ]);
 

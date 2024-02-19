@@ -56,6 +56,9 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
+    client: {
+      overlay: false, // disable full screen overlay
+    },
   },
   // Only for dev
   performance: {
