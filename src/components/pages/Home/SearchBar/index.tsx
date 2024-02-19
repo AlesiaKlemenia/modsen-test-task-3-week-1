@@ -1,9 +1,10 @@
 import { Typography } from '@mui/material';
-import Search, { ISearchProps } from '../Search';
-import FilterBar, { IFilterBarProps } from '../FilterBar';
-import { SearchField, FormBox } from './styled';
 
-interface ISearchBarProps extends ISearchProps, IFilterBarProps {}
+import FilterBar from '../FilterBar';
+import Search from '../Search';
+import { ISearchBarProps } from './interfaces';
+import { FormBox, SearchField } from './styled';
+
 const SearchBar = ({
   onFieldChange,
   onKeyDown,

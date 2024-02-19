@@ -25,8 +25,7 @@ const EmptySearchResult = (): JSX.Element => {
       >
         <Typography variant="body1">What can you try to do?</Typography>
         <Typography variant="body2">
-          {/* eslint-disable-next-line react/no-unescaped-entities */}- Сheck
-          that you entered the correct request
+          - Сheck that you entered the correct request
         </Typography>
         <Typography variant="body2">- Start VPN</Typography>
       </Box>

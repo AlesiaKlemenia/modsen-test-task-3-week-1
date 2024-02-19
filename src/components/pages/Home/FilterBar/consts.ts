@@ -1,4 +1,4 @@
-import { ISelectItem } from './FilterSelect';
+import { ISelectItem } from '../../../../interfaces/ISelectItem';
 
 export const categoryItems: ISelectItem[] = [
   {

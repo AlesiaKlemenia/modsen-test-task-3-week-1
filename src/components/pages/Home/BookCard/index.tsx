@@ -1,16 +1,18 @@
-import { Box } from '@mui/material';
-import { IBookCardInfo } from '../../../../consts/bookInfo';
+import CoverImage from '@components/ui/CoverImage';
+
+import paths from '@/constants/paths';
+import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
+
 import {
   Author,
   BookInfo,
   Category,
   EmptyElement,
   ImageWrapper,
-  StyledLink,
   StyledCard,
+  StyledLink,
   Title,
 } from './styled';
-import noCoverImage from '../../../../assets/img/no-image.png';
 
 const BookCard = ({
   id,
@@ -20,7 +22,7 @@ const BookCard = ({
   coverUrl,
 }: IBookCardInfo): JSX.Element => {
   return (
-    <StyledLink to={`/books/${id}`} isdisabled={!title}>
+    <StyledLink to={`${paths.book.url}${id}`} isdisabled={!title}>
       <StyledCard
         sx={{
           border: 'black rgba(0, 0, 0, 0.05) solid',
@@ -29,21 +31,7 @@ const BookCard = ({
         }}
       >
         <ImageWrapper>
-          {coverUrl ? (
-            <Box
-              component="img"
-              sx={{ width: '100%', height: '100%' }}
-              alt={title}
-              src={coverUrl}
-            />
-          ) : (
-            <Box
-              component="img"
-              sx={{ width: '100%', height: '100%' }}
-              alt={title}
-              src={noCoverImage}
-            />
-          )}
+          <CoverImage title={title} coverUrl={coverUrl} />
         </ImageWrapper>
         <BookInfo>
           {bookCategories ? (
@@ -54,8 +42,18 @@ const BookCard = ({
             <EmptyElement />
           )}
           {title ? (
-            <Title sx={{ marginBottom: '1rem', fontWeight: 'bold' }}>
-              {title.length <= 70 ? title : `${title.substring(0, 66)}...`}
+            <Title
+              sx={{
+                width: '100%',
+                height: '48px',
+                marginBottom: '1rem',
+                fontWeight: 'bold',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                wordWrap: 'break-word',
+              }}
+            >
+              {title}
             </Title>
           ) : (
             <EmptyElement />

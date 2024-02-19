@@ -1,12 +1,5 @@
-import { SearchField, SearchButton, SearchFieldWrapper } from './styled';
-
-export interface ISearchProps {
-  onFieldChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onKeyDown: React.KeyboardEventHandler<HTMLDivElement>;
-  onSearchClick: () => void;
-  isError: boolean;
-  value: string;
-}
+import { ISearchProps } from '../../../../interfaces/ISearchProps';
+import { SearchButton, SearchField, SearchFieldWrapper } from './styled';
 
 const Search = ({
   onFieldChange,

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { searchBooksUrl } from '@components/pages/Home/constants';
 import {
   Box,
   Button,
@@ -7,14 +7,17 @@ import {
   Typography,
 } from '@mui/material';
 import axios from 'axios';
+import { useCallback, useEffect, useState } from 'react';
+
+import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
+import { IFullBookInfo } from '@/interfaces/IFullBookInfo';
+
 import Layout from '../../Layout';
-import { searchBooksUrl } from '../../../consts/api';
-import { IBookCardInfo, IFullBookInfo } from '../../../consts/bookInfo';
-import { CatalogField } from './styled';
 import BookCard from './BookCard';
 import BookCatalog from './BookCatalog';
 import EmptySearchResult from './EmptySearchResult';
 import SearchBar from './SearchBar';
+import { CatalogField } from './styled';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');
@@ -64,7 +67,6 @@ const Home = (): JSX.Element => {
       category === 'all' ? '' : `:subject:${category}`
     }&startIndex=${searchStartIndex}&maxResults=30&orderBy=${sort}`;
     const response = await axios.get(url);
-    console.warn(response);
     if (!response.data.totalItems) {
       setBooksCount(() => 0);
       setIsLoading(false);
