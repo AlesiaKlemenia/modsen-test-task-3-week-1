@@ -1,6 +1,5 @@
-import { Box } from '@mui/material';
+import CoverImage from '@components/ui/CoverImage';
 
-import noCoverImage from '@/assets/img/no-image.png';
 import paths from '@/constants/paths';
 import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
 
@@ -32,21 +31,7 @@ const BookCard = ({
         }}
       >
         <ImageWrapper>
-          {coverUrl ? (
-            <Box
-              component="img"
-              sx={{ width: '100%', height: '100%' }}
-              alt={title}
-              src={coverUrl}
-            />
-          ) : (
-            <Box
-              component="img"
-              sx={{ width: '100%', height: '100%' }}
-              alt={title}
-              src={noCoverImage}
-            />
-          )}
+          <CoverImage title={title} coverUrl={coverUrl} />
         </ImageWrapper>
         <BookInfo>
           {bookCategories ? (
@@ -57,8 +42,18 @@ const BookCard = ({
             <EmptyElement />
           )}
           {title ? (
-            <Title sx={{ marginBottom: '1rem', fontWeight: 'bold' }}>
-              {title.length <= 70 ? title : `${title.substring(0, 66)}...`}
+            <Title
+              sx={{
+                width: '100%',
+                height: '48px',
+                marginBottom: '1rem',
+                fontWeight: 'bold',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                wordWrap: 'break-word',
+              }}
+            >
+              {title}
             </Title>
           ) : (
             <EmptyElement />
