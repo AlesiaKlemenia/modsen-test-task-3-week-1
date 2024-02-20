@@ -4,8 +4,8 @@ module.exports = {
   preset: 'ts-jest',
   moduleNameMapper: {
     // if your using tsconfig.paths thers is no harm in telling jest
-    '@components/(.*)$': '<rootDir>/tests/components/$1',
-    '@/(.*)$': '<rootDir>/src/$1',
+    '/^@components/(.*)$/': '<rootDir>/src/components/$1',
+    '@/(.*)$': '<rootDir>/src/components/$1',
 
     // mocking assests and styling
     '^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -14,6 +14,7 @@ module.exports = {
     /* mock models and services folder */
     '(assets|models|services)': '<rootDir>/tests/mocks/fileMock.ts',
   },
+  resolver: undefined,
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
     '^.+\\.tsx?$': 'ts-jest',
@@ -24,4 +25,5 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   modulePaths: ['<rootDir>'],
   testEnvironment: 'jsdom',
+  moduleDirectories: ['.', 'node_modules'],
 };
