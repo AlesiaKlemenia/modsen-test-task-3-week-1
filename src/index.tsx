@@ -1,5 +1,6 @@
 import './global.css';
 
+import ErrorBoundary from '@components/ErrorBoundary';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router';
