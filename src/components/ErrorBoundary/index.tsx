@@ -8,7 +8,7 @@ const ErrorBoundary = (): JSX.Element => {
       {error.status} {error.statusText}
     </h1>
   ) : (
-    <h1>{error.message || error}</h1>
+    <h1>{error.message}</h1>
   );
 };
 

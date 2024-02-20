@@ -1,8 +1,8 @@
+import CoverImage from '@components/ui/CoverImage';
 import { Typography } from '@mui/material';
 
 import { IBookDetailInfo } from '@/interfaces/IBookDetailInfo';
 
-import CoverImage from '@components/ui/CoverImage';
 import {
   Author,
   BookDetailInfoWrapper,
