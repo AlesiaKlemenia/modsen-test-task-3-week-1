@@ -11,9 +11,3 @@ export const Catalog = styled.div`
   grid-auto-rows: minmax(430px, 500px);
   grid-gap: 3rem;
 `;
-
-export const EmptyCatalog = styled.div`
-  width: 0;
-  height: 0;
-  visibility: none;
-`;

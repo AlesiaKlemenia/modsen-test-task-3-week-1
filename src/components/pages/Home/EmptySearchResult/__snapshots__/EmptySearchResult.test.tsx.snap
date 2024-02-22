@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptySearchResult component renders correctly 1`] = `
+<div
+  className="MuiBox-root css-1oz94fl"
+>
+  <h3
+    className="MuiTypography-root MuiTypography-h3 css-1dbdsyo-MuiTypography-root"
+  >
+    It seems, nothing was found :(
+  </h3>
+  <div
+    className="MuiBox-root css-1qja9x7"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+    >
+      What can you try to do?
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+    >
+      - Сheck that you entered the correct request
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body2 css-e784if-MuiTypography-root"
+    >
+      - Start VPN
+    </p>
+  </div>
+</div>
+`;

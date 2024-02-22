@@ -1,4 +1,5 @@
-import { IFilterBarProps } from '../../../../interfaces/IFilterBarProps';
+import { IFilterBarProps } from '@/interfaces/IFilterBarProps';
+
 import { categoryItems, sortingItems } from './consts';
 import FilterSelect from './FilterSelect';
 import { FilterBarWrapper } from './styled';

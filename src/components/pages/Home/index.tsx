@@ -115,6 +115,7 @@ const Home = (): JSX.Element => {
   return (
     <Layout>
       <SearchBar
+        data-testid="search-bar"
         onFieldChange={onFieldChange}
         onKeyDown={onKeyDown}
         onSearchClick={onSearchClick}
@@ -127,7 +128,7 @@ const Home = (): JSX.Element => {
       />
       {isLoading ? (
         <Box sx={{ width: '100%' }}>
-          <LinearProgress />
+          <LinearProgress data-testid="loading-indicator" />
         </Box>
       ) : (
         <CatalogField>

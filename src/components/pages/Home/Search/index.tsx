@@ -1,4 +1,5 @@
-import { ISearchProps } from '../../../../interfaces/ISearchProps';
+import { ISearchProps } from '@/interfaces/ISearchProps';
+
 import { SearchButton, SearchField, SearchFieldWrapper } from './styled';
 
 const Search = ({

@@ -1,29 +1,20 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  roots: ['./src/tests', './src'],
-  preset: 'ts-jest',
-  moduleNameMapper: {
-    // if your using tsconfig.paths thers is no harm in telling jest
-    '/^@components/(.*)$/': '<rootDir>/src/components/$1',
-    '@/(.*)$': '<rootDir>/src/components/$1',
-
-    // mocking assests and styling
-    '^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/tests/mocks/fileMock.ts',
-    '^.+\\.(css|less|scss|sass)$': '<rootDir>/tests/mocks/styleMock.ts',
-    /* mock models and services folder */
-    '(assets|models|services)': '<rootDir>/tests/mocks/fileMock.ts',
-  },
-  resolver: undefined,
-  transform: {
-    '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.tsx?$': 'ts-jest',
-    // '.+\\.(css|styl|less|sass|scss)$': 'jest-css-modules-transform',
-  },
-  testMatch: ['**/?(*.)(spec|test).[jt]s?(x)'], // Finds test files named like abc.test|spec.ts?tsx|js|jsx in roots:[] prop.
-
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   modulePaths: ['<rootDir>'],
-  testEnvironment: 'jsdom',
-  moduleDirectories: ['.', 'node_modules'],
+  moduleFileExtensions: ['ts', 'tsx', 'js'],
+  moduleNameMapper: {
+    '\\.(css|png)$': 'identity-obj-proxy',
+    '^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/__mocks__/fileMock.js',
+    '^@/{0,1}components/(.*)$': '<rootDir>/src/components/$1',
+    '^@/{0,1}constants/(.*)$': '<rootDir>/src/constants/$1',
+    '^@/tests/(.*)$': '<rootDir>/src/tests/$1',
+  },
+  collectCoverageFrom: ['<rootDir>/**/*.{ts, tsx}'],
+  roots: ['<rootDir>'],
+  testRegex: '(/tests/jest/.*|(\\.|/)(test|spec))\\.(ts|tsx)$',
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  setupFilesAfterEnv: ['./jest.setup.js', '@testing-library/jest-dom'],
 };
