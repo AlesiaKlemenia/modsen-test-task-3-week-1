@@ -1,0 +1,646 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookCard component renders correctly with full data 1`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 1`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 2`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 3`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 4`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 5`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 6`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 7`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 8`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 9`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 10`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        >
+          Juvenile Fiction / Fantasy & Magic
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 11`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src="http://books.google.com/books/publisher/content?id=QzHDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71AmI8TP3JEaV01DOKOF1T6NA531p_djNucrd6UTjfx0XxtSaID1Eludk7BvwGVf_0DDM379yP43fWY0xKHknDCv1vWKTjIAFM6MDeQ9RGs83b0nKdsjvswitqdD1uQL2zk2Pjg&source=gbs_api"
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 12`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          J.K. Rowling, John Tiffany
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 13`] = `
+[
+  <a
+    className="sc-beySPh blaSPp"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={false}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt="Harry Potter und das verwunschene Kind"
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+        >
+          Harry Potter und das verwunschene Kind
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
+
+exports[`BookCard component renders correctly with not full data 14`] = `
+[
+  <a
+    className="sc-beySPh bhgArn"
+    href="/books/QzHDDwAAQBAJ"
+    isdisabled={true}
+    onClick={[Function]}
+  >
+    <div
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        className="sc-dmyCSP khyijC"
+      >
+        <img
+          alt=""
+          className="MuiBox-root css-i0loyx"
+          src={null}
+        />
+      </div>
+      <div
+        className="sc-hLQSwg gGbMNC"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+        />
+        <div
+          className="sc-iBdnpw jJqaqT"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+        >
+          undefined, undefined
+        </p>
+      </div>
+    </div>
+  </a>,
+  ",",
+]
+`;
