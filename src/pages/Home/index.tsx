@@ -1,4 +1,4 @@
-import { searchBooksUrl } from '@components/pages/Home/constants';
+import Layout from '@components/Layout';
 import {
   Box,
   Button,
@@ -11,13 +11,12 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
 import { IFullBookInfo } from '@/interfaces/IFullBookInfo';
-
-import Layout from '../../Layout';
-import BookCard from './BookCard';
-import BookCatalog from './BookCatalog';
-import EmptySearchResult from './EmptySearchResult';
-import SearchBar from './SearchBar';
-import { CatalogField } from './styled';
+import BookCard from '@/pages/Home/BookCard';
+import BookCatalog from '@/pages/Home/BookCatalog';
+import { searchBooksUrl } from '@/pages/Home/constants';
+import EmptySearchResult from '@/pages/Home/EmptySearchResult';
+import SearchBar from '@/pages/Home/SearchBar';
+import { CatalogField } from '@/pages/Home/styled';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');

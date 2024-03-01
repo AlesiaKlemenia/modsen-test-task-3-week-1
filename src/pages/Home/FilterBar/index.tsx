@@ -1,8 +1,7 @@
 import { IFilterBarProps } from '@/interfaces/IFilterBarProps';
-
-import { categoryItems, sortingItems } from './consts';
-import FilterSelect from './FilterSelect';
-import { FilterBarWrapper } from './styled';
+import { categoryItems, sortingItems } from '@/pages/Home/FilterBar/consts';
+import FilterSelect from '@/pages/Home/FilterBar/FilterSelect';
+import { FilterBarWrapper } from '@/pages/Home/FilterBar/styled';
 
 const FilterBar = ({
   category,

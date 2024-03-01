@@ -1,11 +1,10 @@
-import './global.css';
+import '@/global.css';
 
-import ErrorBoundary from '@components/ErrorBoundary';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 
-import router from './routes';
+import router from '@/routes/routes';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

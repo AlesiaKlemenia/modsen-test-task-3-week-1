@@ -1,8 +1,5 @@
-import CoverImage from '@components/ui/CoverImage';
-
 import paths from '@/constants/paths';
 import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
-
 import {
   Author,
   BookInfo,
@@ -12,7 +9,8 @@ import {
   StyledCard,
   StyledLink,
   Title,
-} from './styled';
+} from '@/pages/Home/BookCard/styled';
+import CoverImage from '@/ui/CoverImage';
 
 const BookCard = ({
   id,

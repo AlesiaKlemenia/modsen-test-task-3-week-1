@@ -1,4 +1,3 @@
-import Home from '@components/pages/Home/index';
 import {
   createTheme,
   StyledEngineProvider,
@@ -13,6 +12,8 @@ import {
 import axios from 'axios';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+
+import Home from '@/pages/Home/index';
 
 jest.mock('axios');
 const mockedAxiosGet = axios.get as jest.Mock;

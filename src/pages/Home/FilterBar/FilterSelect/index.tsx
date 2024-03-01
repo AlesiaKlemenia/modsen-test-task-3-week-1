@@ -1,7 +1,10 @@
 import { InputLabel, MenuItem } from '@mui/material';
 
-import { IFilterSelectProps } from './interfaces';
-import { FilterWrapper, StyledSelect } from './styled';
+import { IFilterSelectProps } from '@/pages/Home/FilterBar/FilterSelect/interfaces';
+import {
+  FilterWrapper,
+  StyledSelect,
+} from '@/pages/Home/FilterBar/FilterSelect/styled';
 
 const FilterSelect = ({
   label,

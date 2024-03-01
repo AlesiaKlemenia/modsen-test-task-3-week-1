@@ -1,6 +1,6 @@
 import { SelectChangeEvent } from '@mui/material';
 
-import { ISelectItem } from '../../../../../interfaces/ISelectItem';
+import { ISelectItem } from '@/interfaces/ISelectItem';
 
 export interface IFilterSelectProps {
   label: string;

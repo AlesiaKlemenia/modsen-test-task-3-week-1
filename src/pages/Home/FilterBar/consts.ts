@@ -1,4 +1,4 @@
-import { ISelectItem } from '../../../../interfaces/ISelectItem';
+import { ISelectItem } from '@/interfaces/ISelectItem';
 
 export const categoryItems: ISelectItem[] = [
   {
