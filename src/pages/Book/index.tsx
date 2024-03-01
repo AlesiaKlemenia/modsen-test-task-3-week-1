@@ -1,14 +1,14 @@
-import BookInfo from '@components/pages/Book/BookInfo';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 
 import Layout from '@/components/Layout';
+import paths from '@/constants/paths';
 import { IFullBookInfo } from '@/interfaces/IFullBookInfo';
-
-import { getBookUrl } from './constants';
-import { StyledBackToHomeLink, StyledNav } from './styled';
+import BookInfo from '@/pages/Book/BookInfo';
+import { getBookUrl } from '@/pages/Book/constants';
+import { StyledBackToHomeLink, StyledNav } from '@/pages/Book/styled';
 
 const Home = (): JSX.Element => {
   const { id } = useParams();
@@ -42,7 +42,7 @@ const Home = (): JSX.Element => {
     <Layout>
       <StyledNav>
         <StyledBackToHomeLink
-          href="/"
+          href={paths.home}
           sx={{ margin: '1vw', color: 'rgba(0, 0, 0)', textDecoration: 'none' }}
         >
           <ArrowBackIosIcon />

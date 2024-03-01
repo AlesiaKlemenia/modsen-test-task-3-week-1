@@ -1,8 +1,6 @@
-import CoverImage from '@components/ui/CoverImage';
 import { Typography } from '@mui/material';
 
 import { IBookDetailInfo } from '@/interfaces/IBookDetailInfo';
-
 import {
   Author,
   BookDetailInfoWrapper,
@@ -13,7 +11,8 @@ import {
   EmptyElement,
   ImageWrapper,
   Title,
-} from './styled';
+} from '@/pages/Book/BookInfo/styled';
+import CoverImage from '@/ui/CoverImage';
 
 const BookInfo = ({
   id,
