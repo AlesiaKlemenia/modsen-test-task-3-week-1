@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 
 import noCoverImage from '@/assets/img/no-image.png';
 import { ICoverImageProps } from '@/ui/CoverImage/interfaces';
+import { Image } from '@/ui/CoverImage/styled';
 
 const CoverImage = ({ title, coverUrl }: ICoverImageProps): JSX.Element => {
   return (

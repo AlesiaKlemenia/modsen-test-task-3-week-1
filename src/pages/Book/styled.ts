@@ -13,4 +13,8 @@ export const StyledNav = styled.nav`
 export const StyledBackToHomeLink = styled(Link)`
   display: flex;
   align-items: center;
+
+  margin: 1vw;
+  color: rgba(0, 0, 0);
+  text-decoration: none;
 `;

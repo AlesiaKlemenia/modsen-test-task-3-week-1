@@ -48,11 +48,13 @@ export const BookInfo = styled.div`
 `;
 
 export const StyledBookTitle = styled(BookTitle)`
-  width: 100%;
-  height: 48px;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
+  & {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
 `;

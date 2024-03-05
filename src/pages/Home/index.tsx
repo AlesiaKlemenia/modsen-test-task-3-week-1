@@ -16,7 +16,11 @@ import BookCatalog from '@/pages/Home/BookCatalog';
 import { searchBooksUrl } from '@/pages/Home/constants';
 import EmptySearchResult from '@/pages/Home/EmptySearchResult';
 import SearchBar from '@/pages/Home/SearchBar';
-import { CatalogField } from '@/pages/Home/styled';
+import {
+  CatalogField,
+  CatalogFoundResultsTitle,
+  ProgressBarWrapper,
+} from '@/pages/Home/styled';
 
 const Home = (): JSX.Element => {
   const [value, setValue] = useState<string>('');
@@ -126,16 +130,16 @@ const Home = (): JSX.Element => {
         onSortingSelectChange={onSelectSortChange}
       />
       {isLoading ? (
-        <Box sx={{ width: '100%' }}>
+        <ProgressBarWrapper>
           <LinearProgress data-testid="loading-indicator" />
-        </Box>
+        </ProgressBarWrapper>
       ) : (
         <CatalogField>
           {books.length ? (
             <>
-              <Typography sx={{ color: 'rgba(0, 0, 0)', fontSize: '1.7rem' }}>
+              <CatalogFoundResultsTitle>
                 Found {booksCount} results
-              </Typography>
+              </CatalogFoundResultsTitle>
               <BookCatalog>
                 {books.map((book, index) => (
                   <BookCard

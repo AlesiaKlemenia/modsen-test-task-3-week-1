@@ -41,10 +41,7 @@ const Home = (): JSX.Element => {
   return (
     <Layout>
       <StyledNav>
-        <StyledBackToHomeLink
-          href={paths.home}
-          sx={{ margin: '1vw', color: 'rgba(0, 0, 0)', textDecoration: 'none' }}
-        >
+        <StyledBackToHomeLink href={paths.home}>
           <ArrowBackIosIcon />
           Back to Home
         </StyledBackToHomeLink>

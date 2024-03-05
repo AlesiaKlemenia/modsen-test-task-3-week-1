@@ -6,7 +6,7 @@ const BookDescription = ({
   description,
 }: IBookDescriptionProps): JSX.Element => {
   return description ? (
-    <Description sx={{ marginBottom: '0.5rem' }}>{description}</Description>
+    <Description>{description}</Description>
   ) : (
     <EmptyElement />
   );

@@ -16,4 +16,5 @@ export const SearchField = styled(TextField)`
 
 export const SearchButton = styled(Button)`
   height: 40px;
+  background-color: rgba(0, 0, 0);
 `;

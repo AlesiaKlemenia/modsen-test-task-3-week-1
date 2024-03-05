@@ -4,9 +4,7 @@ import EmptyElement from '@/ui/EmptyElement';
 
 const BookAuthors = ({ authors }: IBookAuthorsProps): JSX.Element => {
   return authors ? (
-    <Author sx={{ marginBottom: '1rem' }}>
-      {Array.isArray(authors) ? authors.join(', ') : authors}
-    </Author>
+    <Author>{Array.isArray(authors) ? authors.join(', ') : authors}</Author>
   ) : (
     <EmptyElement />
   );

@@ -4,7 +4,7 @@ import EmptyElement from '@/ui/EmptyElement';
 
 const BookCategory = ({ bookCategories }: IBookCategoryProps): JSX.Element => {
   return bookCategories ? (
-    <Category sx={{ marginBottom: '1rem' }}>
+    <Category>
       {Array.isArray(bookCategories)
         ? bookCategories.join(' | ')
         : bookCategories}

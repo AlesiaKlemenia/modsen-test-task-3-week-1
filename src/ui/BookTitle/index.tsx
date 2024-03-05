@@ -3,11 +3,7 @@ import { Title } from '@/ui/BookTitle/styled';
 import EmptyElement from '@/ui/EmptyElement';
 
 const BookTitle = ({ title }: IBookTitleProps): JSX.Element => {
-  return title ? (
-    <Title sx={{ marginBottom: '1rem', fontWeight: 'bold' }}>{title}</Title>
-  ) : (
-    <EmptyElement />
-  );
+  return title ? <Title>{title}</Title> : <EmptyElement />;
 };
 
 export default BookTitle;

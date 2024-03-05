@@ -7,11 +7,11 @@ import {
   DescriptionWrapper,
   ImageWrapper,
 } from '@/pages/Book/BookInfo/styled';
-import CoverImage from '@/ui/CoverImage';
-import BookCategory from '@/ui/BookCategory';
-import BookTitle from '@/ui/BookTitle';
 import BookAuthors from '@/ui/BookAuthors';
+import BookCategory from '@/ui/BookCategory';
 import BookDescription from '@/ui/BookDescription';
+import BookTitle from '@/ui/BookTitle';
+import CoverImage from '@/ui/CoverImage';
 
 const BookInfo = ({
   id,
