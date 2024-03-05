@@ -2,17 +2,16 @@ import { Typography } from '@mui/material';
 
 import { IBookDetailInfo } from '@/interfaces/IBookDetailInfo';
 import {
-  Author,
   BookDetailInfoWrapper,
   BookInfoWrapper,
-  Category,
-  Description,
   DescriptionWrapper,
-  EmptyElement,
   ImageWrapper,
-  Title,
 } from '@/pages/Book/BookInfo/styled';
 import CoverImage from '@/ui/CoverImage';
+import BookCategory from '@/ui/BookCategory';
+import BookTitle from '@/ui/BookTitle';
+import BookAuthors from '@/ui/BookAuthors';
+import BookDescription from '@/ui/BookDescription';
 
 const BookInfo = ({
   id,
@@ -28,34 +27,12 @@ const BookInfo = ({
         <CoverImage title={title} coverUrl={coverUrl} />
       </ImageWrapper>
       <BookDetailInfoWrapper>
-        {bookCategories ? (
-          <Category sx={{ marginBottom: '1rem' }}>
-            {bookCategories.join(' | ')}
-          </Category>
-        ) : (
-          <EmptyElement />
-        )}
-        {title ? (
-          <Title sx={{ marginBottom: '1rem', fontWeight: 'bold' }}>
-            {title}
-          </Title>
-        ) : (
-          <EmptyElement />
-        )}
-        {authors ? (
-          <Author sx={{ marginBottom: '1rem' }}>{authors.join(', ')}</Author>
-        ) : (
-          <EmptyElement />
-        )}
+        <BookCategory bookCategories={bookCategories} />
+        <BookTitle title={title} />
+        <BookAuthors authors={authors} />
         <Typography>Description:</Typography>
         <DescriptionWrapper>
-          {description ? (
-            <Description sx={{ marginBottom: '0.5rem' }}>
-              {description}
-            </Description>
-          ) : (
-            <EmptyElement />
-          )}
+          <BookDescription description={description} />
         </DescriptionWrapper>
       </BookDetailInfoWrapper>
     </BookInfoWrapper>
