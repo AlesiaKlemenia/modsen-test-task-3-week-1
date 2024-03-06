@@ -18,12 +18,7 @@ const SearchBar = ({
 }: ISearchBarProps): JSX.Element => {
   return (
     <SearchField>
-      <Typography
-        variant="h2"
-        sx={{ fontSize: { xs: '2.5rem', sm: '3.75rem' } }}
-      >
-        Search for books
-      </Typography>
+      <Typography variant="h1">Search for books</Typography>
       <FormBox>
         <Search
           onFieldChange={onFieldChange}

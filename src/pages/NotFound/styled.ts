@@ -11,7 +11,6 @@ export const NotFoundWrapper = styled(Box)`
 `;
 
 export const NotFoundTitle = styled(Typography)`
-  font-size: 128px;
   text-align: center;
 `;
 

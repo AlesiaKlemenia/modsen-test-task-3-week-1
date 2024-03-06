@@ -9,6 +9,7 @@ interface StyledLinkProps {
 }
 
 export const StyledLink = styled(Link)<StyledLinkProps>`
+  text-decoration: none;
   ${({ isdisabled }) =>
     isdisabled
       ? css`
