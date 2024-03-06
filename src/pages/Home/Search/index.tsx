@@ -24,11 +24,7 @@ const Search = ({
     >
       {value}
     </SearchField>
-    <SearchButton
-      variant="contained"
-      sx={{ backgroundColor: 'rgba(0, 0, 0)' }}
-      onClick={onSearchClick}
-    >
+    <SearchButton variant="contained" onClick={onSearchClick}>
       Search
     </SearchButton>
   </SearchFieldWrapper>

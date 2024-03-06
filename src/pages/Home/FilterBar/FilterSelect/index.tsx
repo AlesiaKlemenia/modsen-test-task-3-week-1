@@ -1,8 +1,9 @@
-import { InputLabel, MenuItem } from '@mui/material';
+import { MenuItem } from '@mui/material';
 
 import { IFilterSelectProps } from '@/pages/Home/FilterBar/FilterSelect/interfaces';
 import {
   FilterWrapper,
+  StyledInputLabel,
   StyledSelect,
 } from '@/pages/Home/FilterBar/FilterSelect/styled';
 
@@ -13,9 +14,7 @@ const FilterSelect = ({
   onSelectChange,
 }: IFilterSelectProps): JSX.Element => (
   <FilterWrapper>
-    <InputLabel id={`${label}-select-label}`} sx={{ color: 'rgba(0, 0, 0)' }}>
-      {label}
-    </InputLabel>
+    <StyledInputLabel id={`${label}-select-label}`}>{label}</StyledInputLabel>
     <StyledSelect
       labelId={`${label}-select-label`}
       id={`${label}-select`}

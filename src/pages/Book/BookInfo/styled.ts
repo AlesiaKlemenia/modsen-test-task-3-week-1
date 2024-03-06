@@ -33,29 +33,9 @@ export const BookDetailInfoWrapper = styled.div`
   flex-direction: column;
 `;
 
-export const Category = styled(Typography)`
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: underline;
-`;
-
-export const Title = styled(Typography)`
-  font-weight: bold;
-`;
-
-export const Author = styled(Typography)`
-  color: rgba(0, 0, 0, 0.6);
-`;
-
 export const DescriptionWrapper = styled.div`
   width: calc(100% - 20px);
   border: rgba(0, 0, 0, 0.4) 1px solid;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 10px;
-`;
-
-export const Description = styled(Typography)``;
-
-export const EmptyElement = styled.div`
-  height: 24px;
-  margin-bottom: 1rem;
 `;

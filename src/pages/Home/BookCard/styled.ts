@@ -1,6 +1,8 @@
-import { Card, Typography } from '@mui/material';
+import { Card } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
+
+import BookTitle from '@/ui/BookTitle';
 
 interface StyledLinkProps {
   isdisabled?: boolean;
@@ -25,6 +27,10 @@ export const StyledCard = styled(Card)`
   justify-self: center;
   flex-direction: column;
 
+  border: 1px rgba(0, 0, 0, 0.05) solid;
+  background-color: rgba(0, 0, 0, 0.02);
+  transition: all 0.5s;
+
   &:hover {
     transform: scale(1.05);
   }
@@ -41,20 +47,14 @@ export const BookInfo = styled.div`
   height: 125px;
 `;
 
-export const Category = styled(Typography)`
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: underline;
-`;
-
-export const Title = styled(Typography)`
-  font-weight: bold;
-`;
-
-export const Author = styled(Typography)`
-  color: rgba(0, 0, 0, 0.6);
-`;
-
-export const EmptyElement = styled.div`
-  height: 24px;
-  margin-bottom: 1rem;
+export const StyledBookTitle = styled(BookTitle)`
+  & {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
 `;
