@@ -5,11 +5,11 @@ import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
 import {
   BookInfo,
   ImageWrapper,
+  StyledBookAuthors,
   StyledBookTitle,
   StyledCard,
   StyledLink,
 } from '@/pages/Home/BookCard/styled';
-import BookAuthors from '@/ui/BookAuthors';
 import BookCategory from '@/ui/BookCategory';
 import CoverImage from '@/ui/CoverImage';
 
@@ -37,8 +37,8 @@ const BookCard = ({
         </ImageWrapper>
         <BookInfo>
           <BookCategory bookCategories={bookCategories?.[0]} />
-          <StyledBookTitle title={title} />
-          <BookAuthors authors={getAuthors()} />
+          <StyledBookTitle>{title}</StyledBookTitle>
+          <StyledBookAuthors>{getAuthors()}</StyledBookAuthors>
         </BookInfo>
       </StyledCard>
     </StyledLink>
