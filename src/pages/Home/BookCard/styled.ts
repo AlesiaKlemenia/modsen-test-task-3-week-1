@@ -2,7 +2,8 @@ import { Card } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-import BookTitle from '@/ui/BookTitle';
+import { Author } from '@/ui/BookAuthors/styled';
+import { Title } from '@/ui/BookTitle/styled';
 
 interface StyledLinkProps {
   isdisabled?: boolean;
@@ -48,14 +49,17 @@ export const BookInfo = styled.div`
   height: 125px;
 `;
 
-export const StyledBookTitle = styled(BookTitle)`
-  & {
-    width: 100%;
-    height: 48px;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-  }
+export const StyledBookTitle = styled(Title)`
+  width: 100%;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+`;
+
+export const StyledBookAuthors = styled(Author)`
+  height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 `;

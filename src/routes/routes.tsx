@@ -1,10 +1,12 @@
-import ErrorBoundary from '@components/ErrorBoundary';
+import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import paths from '@/constants/paths';
-import Book from '@/pages/Book';
-import Home from '@/pages/Home';
-import NotFound from '@/pages/NotFound';
+
+const ErrorBoundary = lazy(() => import('@components/ErrorBoundary'));
+const Home = lazy(() => import('@/pages/Home'));
+const Book = lazy(() => import('@/pages/Book'));
+const NotFound = lazy(() => import('@/pages/NotFound'));
 
 const router = createBrowserRouter([
   {
