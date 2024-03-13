@@ -17,6 +17,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@components': path.resolve(__dirname, 'src/components'),
+      '@mui/styled-engine': '@mui/styled-engine-sc',
     },
   },
   module: {

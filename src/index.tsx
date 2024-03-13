@@ -1,11 +1,12 @@
-import './global.css';
+import '@/global.css';
 
-import ErrorBoundary from '@components/ErrorBoundary';
-import React from 'react';
+import { ThemeProvider } from '@mui/material';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router';
 
-import router from './routes';
+import router from '@/routes/routes';
+import theme from '@/theme';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -13,6 +14,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </ThemeProvider>
   </React.StrictMode>,
 );
