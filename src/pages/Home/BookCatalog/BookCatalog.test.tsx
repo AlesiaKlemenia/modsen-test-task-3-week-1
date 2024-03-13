@@ -3,13 +3,15 @@ import '@testing-library/jest-dom';
 import { StyledEngineProvider } from '@mui/material';
 import renderer from 'react-test-renderer';
 
-import EmptySearchResult from '.';
+import BookCatalog from '@/pages/Home/BookCatalog';
 
-describe('EmptySearchResult component', () => {
-  it('renders correctly', () => {
+describe('Book Catalog component', () => {
+  it('renders correctly with children', () => {
     const componentRenderer = renderer.create(
       <StyledEngineProvider injectFirst>
-        <EmptySearchResult />
+        <BookCatalog>
+          <div className="test" />
+        </BookCatalog>
       </StyledEngineProvider>,
     );
     const tree = componentRenderer.toJSON();

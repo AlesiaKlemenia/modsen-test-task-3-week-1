@@ -3,16 +3,16 @@
 exports[`BookCard component renders correctly with full data 1`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -21,20 +21,20 @@ exports[`BookCard component renders correctly with full data 1`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -48,16 +48,16 @@ exports[`BookCard component renders correctly with full data 1`] = `
 exports[`BookCard component renders correctly with not full data 1`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -66,18 +66,18 @@ exports[`BookCard component renders correctly with not full data 1`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
-        <div
-          className="sc-iBdnpw jJqaqT"
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -91,16 +91,16 @@ exports[`BookCard component renders correctly with not full data 1`] = `
 exports[`BookCard component renders correctly with not full data 2`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -109,18 +109,18 @@ exports[`BookCard component renders correctly with not full data 2`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -134,16 +134,16 @@ exports[`BookCard component renders correctly with not full data 2`] = `
 exports[`BookCard component renders correctly with not full data 3`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -152,20 +152,20 @@ exports[`BookCard component renders correctly with not full data 3`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -179,16 +179,16 @@ exports[`BookCard component renders correctly with not full data 3`] = `
 exports[`BookCard component renders correctly with not full data 4`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -197,20 +197,20 @@ exports[`BookCard component renders correctly with not full data 4`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -224,16 +224,16 @@ exports[`BookCard component renders correctly with not full data 4`] = `
 exports[`BookCard component renders correctly with not full data 5`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -242,16 +242,16 @@ exports[`BookCard component renders correctly with not full data 5`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
-        />
-        <div
-          className="sc-iBdnpw jJqaqT"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -265,16 +265,16 @@ exports[`BookCard component renders correctly with not full data 5`] = `
 exports[`BookCard component renders correctly with not full data 6`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -283,18 +283,18 @@ exports[`BookCard component renders correctly with not full data 6`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
-        <div
-          className="sc-iBdnpw jJqaqT"
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -308,16 +308,16 @@ exports[`BookCard component renders correctly with not full data 6`] = `
 exports[`BookCard component renders correctly with not full data 7`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -326,18 +326,18 @@ exports[`BookCard component renders correctly with not full data 7`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
-        <div
-          className="sc-iBdnpw jJqaqT"
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -351,16 +351,16 @@ exports[`BookCard component renders correctly with not full data 7`] = `
 exports[`BookCard component renders correctly with not full data 8`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -369,18 +369,18 @@ exports[`BookCard component renders correctly with not full data 8`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -394,16 +394,16 @@ exports[`BookCard component renders correctly with not full data 8`] = `
 exports[`BookCard component renders correctly with not full data 9`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -412,18 +412,18 @@ exports[`BookCard component renders correctly with not full data 9`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -437,16 +437,16 @@ exports[`BookCard component renders correctly with not full data 9`] = `
 exports[`BookCard component renders correctly with not full data 10`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -455,20 +455,20 @@ exports[`BookCard component renders correctly with not full data 10`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         >
           Juvenile Fiction / Fantasy & Magic
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -482,16 +482,16 @@ exports[`BookCard component renders correctly with not full data 10`] = `
 exports[`BookCard component renders correctly with not full data 11`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -500,16 +500,16 @@ exports[`BookCard component renders correctly with not full data 11`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
-        />
-        <div
-          className="sc-iBdnpw jJqaqT"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -523,16 +523,16 @@ exports[`BookCard component renders correctly with not full data 11`] = `
 exports[`BookCard component renders correctly with not full data 12`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -541,16 +541,16 @@ exports[`BookCard component renders correctly with not full data 12`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
-        />
-        <div
-          className="sc-iBdnpw jJqaqT"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           J.K. Rowling, John Tiffany
         </p>
@@ -564,16 +564,16 @@ exports[`BookCard component renders correctly with not full data 12`] = `
 exports[`BookCard component renders correctly with not full data 13`] = `
 [
   <a
-    className="sc-beySPh blaSPp"
+    className="sc-dmyCSP hhSEDr"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={false}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt="Harry Potter und das verwunschene Kind"
@@ -582,18 +582,18 @@ exports[`BookCard component renders correctly with not full data 13`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-jTQCzO jDwgRi css-139iji1-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
         >
           Harry Potter und das verwunschene Kind
         </p>
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>
@@ -607,16 +607,16 @@ exports[`BookCard component renders correctly with not full data 13`] = `
 exports[`BookCard component renders correctly with not full data 14`] = `
 [
   <a
-    className="sc-beySPh bhgArn"
+    className="sc-dmyCSP eVTamN"
     href="/books/QzHDDwAAQBAJ"
     isdisabled={true}
     onClick={[Function]}
   >
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-guDLey eHphZS css-1a39b45-MuiPaper-root-MuiCard-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-hLQSwg hvwzqE css-bhp9pd-MuiPaper-root-MuiCard-root"
     >
       <div
-        className="sc-dmyCSP khyijC"
+        className="sc-eDLKkx QPgvX"
       >
         <img
           alt=""
@@ -625,16 +625,16 @@ exports[`BookCard component renders correctly with not full data 14`] = `
         />
       </div>
       <div
-        className="sc-hLQSwg gGbMNC"
+        className="sc-jTQCzO nssjt"
       >
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-eDLKkx dewhmY css-8m5mf3-MuiTypography-root"
-        />
-        <div
-          className="sc-iBdnpw jJqaqT"
+          className="MuiTypography-root MuiTypography-body1 sc-fsYfdN eNcHzc css-ahj2mt-MuiTypography-root"
         />
         <p
-          className="MuiTypography-root MuiTypography-body1 sc-gLLuof hTCglN css-ahj2mt-MuiTypography-root"
+          className="MuiTypography-root MuiTypography-body1 sc-guDLey sc-gLLuof kTlak hlgxde css-ahj2mt-MuiTypography-root"
+        />
+        <p
+          className="MuiTypography-root MuiTypography-body1 sc-beySPh sc-iBdnpw immIe cfpYwg css-ahj2mt-MuiTypography-root"
         >
           undefined, undefined
         </p>

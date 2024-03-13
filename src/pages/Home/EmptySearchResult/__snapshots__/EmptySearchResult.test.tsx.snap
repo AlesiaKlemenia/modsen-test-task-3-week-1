@@ -2,15 +2,15 @@
 
 exports[`EmptySearchResult component renders correctly 1`] = `
 <div
-  className="MuiBox-root css-1oz94fl"
+  className="sc-beySPh hlahRr MuiBox-root css-0"
 >
   <h3
-    className="MuiTypography-root MuiTypography-h3 css-1dbdsyo-MuiTypography-root"
+    className="MuiTypography-root MuiTypography-h3 sc-guDLey bpalcp css-gepadz-MuiTypography-root"
   >
     It seems, nothing was found :(
   </h3>
   <div
-    className="MuiBox-root css-1qja9x7"
+    className="sc-dmyCSP krHxsj MuiBox-root css-0"
   >
     <p
       className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
