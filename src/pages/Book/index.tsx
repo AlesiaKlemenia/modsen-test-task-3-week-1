@@ -10,7 +10,7 @@ import BookInfo from '@/pages/Book/BookInfo';
 import { getBookUrl } from '@/pages/Book/constants';
 import { StyledBackToHomeLink, StyledNav } from '@/pages/Book/styled';
 
-const Home = (): JSX.Element => {
+const Book = (): JSX.Element => {
   const { id } = useParams();
   const [title, setTitle] = useState<string>('');
   const [bookCategories, setBookCategories] = useState<string[]>([]);
@@ -58,4 +58,4 @@ const Home = (): JSX.Element => {
   );
 };
 
-export default Home;
+export default Book;

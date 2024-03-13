@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import paths from '@/constants/paths';
 import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
@@ -20,7 +20,7 @@ const BookCard = ({
   authors,
   coverUrl,
 }: IBookCardInfo): JSX.Element => {
-  const getAuthors = useCallback((): string | undefined => {
+  const parsedAuthors = useMemo(() => {
     if (authors) {
       return authors.length === 1
         ? authors?.[0]
@@ -38,7 +38,7 @@ const BookCard = ({
         <BookInfo>
           <BookCategory bookCategories={bookCategories?.[0]} />
           <StyledBookTitle>{title}</StyledBookTitle>
-          <StyledBookAuthors>{getAuthors()}</StyledBookAuthors>
+          <StyledBookAuthors>{parsedAuthors}</StyledBookAuthors>
         </BookInfo>
       </StyledCard>
     </StyledLink>
