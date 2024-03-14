@@ -1,4 +1,5 @@
 module.exports = {
+  preset: "jest-puppeteer",
   modulePaths: ['<rootDir>'],
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   moduleNameMapper: {
