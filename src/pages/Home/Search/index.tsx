@@ -14,6 +14,7 @@ const Search = ({
 }: ISearchProps): JSX.Element => (
   <SearchFieldWrapper>
     <SearchField
+      name="search-input-field"
       placeholder="Enter the book name..."
       fullWidth
       size="small"

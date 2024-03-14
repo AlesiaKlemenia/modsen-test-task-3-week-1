@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound component renders correctly 1`] = `
+<div
+  className="sc-beySPh duKABF MuiBox-root css-0"
+>
+  <h1
+    className="MuiTypography-root MuiTypography-h1 sc-guDLey jSayDs css-o2w69a-MuiTypography-root"
+  >
+    404
+  </h1>
+  <h5
+    className="MuiTypography-root MuiTypography-h5 sc-dmyCSP cVwgwO css-b4p6uz-MuiTypography-root"
+  >
+    The page you’re looking for doesn’t exist.
+  </h5>
+  <a
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge css-jh47zj-MuiButtonBase-root-MuiButton-root"
+    href="/"
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+  >
+    Back Home
+  </a>
+</div>
+`;

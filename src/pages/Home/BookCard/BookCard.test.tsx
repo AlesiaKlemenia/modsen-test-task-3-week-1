@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 
-import BookCard from '@components/pages/Home/BookCard/index';
 import { StyledEngineProvider } from '@mui/material';
 import { MemoryRouter } from 'react-router';
 import renderer from 'react-test-renderer';
 
 import { IBookCardInfo } from '@/interfaces/IBookCardInfo';
+import BookCard from '@/pages/Home/BookCard';
 
 describe('BookCard component', () => {
   jest.mock('react-router-dom', () => ({
